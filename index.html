@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<title>Игра "Балда"</title>
+
+<link href="style.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src="script/init.js"></script>
+<script src="script/cell.js"></script>
+<script src="script/word.js"></script>
+<script src="script/rounds.js"></script>
+<script src="script/popup.js"></script>
+<script src="script/query.js"></script>
+
+<script>
+$(document).ready(function()
+{
+    App.Init();
+});
+</script>
+
+</head>
+<body>
+<button id="new_game">
+    Начать заново
+</button>
+<div id="game_table_wrap">
+    <div id="game_table">
+        <div id="game_row">
+            <div id="player_words">
+                <div class="score">0</div>
+                <div class="words_title">Игрок</div>
+            </div>
+            <div id="field_wrap">
+                <table id="field">
+                </table>
+            </div>
+            <div id="computer_words">
+                <div class="score">0</div>
+                <div class="words_title">Компьютер</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="hint">
+</div>
+
+<div id="letter_selection">
+</div>
+
+<div id="word_selection">
+    <div id="selected_word">&nbsp;</div>
+    <button id="add_word">Готово!</button>
+    <button id="clear_word">Очистить</button>
+</div>
+
+<div id="buttons_wrap">
+    <button id="skip">Пропустить ход</button>
+    <button id="cancel">Назад</button>
+</div>
+</body>
+</html>

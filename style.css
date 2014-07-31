@@ -1,0 +1,282 @@
+
+body
+{
+	margin: 20px;
+    background: #eee;
+	text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+button
+{
+    border-radius: 4px;
+    border-radius: 14px;
+    padding: 6px 20px;
+    margin: 0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(#dfdfdf, #cfcfcf);
+}
+
+button:hover
+{
+    background: #ccc;
+}
+
+#add_word,
+#clear_word
+{
+    background-image: linear-gradient(#cecece, #bbb);
+}
+
+#add_word:hover,
+#clear_word:hover
+{
+    background: #bbb;
+}
+
+.settings_item
+{
+    display: inline-block;
+    width: 240px;
+    text-align: left;
+    padding: 10px;
+}
+
+.settings_item_title
+{
+    display: inline-block;
+    font-weight: bold;
+    padding: 6px 0;
+}
+
+.settings_item select
+{
+    float: right;
+    width: 100px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#score
+{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+#game_table_wrap
+{
+    display: none;
+    border-bottom: 1px solid #bbb;
+}
+
+#game_table
+{
+    display: table;
+    table-layout: fixed;
+    margin-bottom: 30px;
+}
+
+#game_row
+{
+    display: table-row;
+    width: 100%;
+}
+
+#player_words,
+#field_wrap,
+#computer_words
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+#player_words,
+#computer_words
+{
+    width: 124px;
+}
+
+#player_words
+{
+    padding: 0 30px 0 0;
+}
+
+#computer_words
+{
+    padding: 0 0 0 30px;
+}
+
+.words_title
+{
+    font-weight: bold;
+    color: #555;
+    margin: 4px 0 10px 0;
+}
+
+.score
+{
+    display: inline-block;
+    background: #555555;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    line-height: 30px;
+    margin: 10px 0 6px 0;
+}
+
+#field td
+{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #bbb;
+	text-align: center;
+	font-size: 22px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#field .letter_available_cell
+{
+    background: #eee;
+}
+
+#field.letter_cell_selection .letter_available_cell,
+#field.letter_selection .letter_available_cell,
+#field.word_selection .word_available_cell
+{
+    cursor: pointer;
+}
+
+#field td[is_selected="1"]
+{
+    background: #aaa !important;
+}
+
+#letter_selection
+{
+    display: none;
+    padding: 0 0 20px 0;
+}
+
+.letter_selection_item
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    padding: 4px;
+    font-size: 20px;
+    background: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.letter_selection_item:hover
+{
+    background: #ccc;
+}
+
+.letter_cell
+{
+    background: #ddd !important;
+}
+
+#buttons_wrap
+{
+    display: none;
+}
+
+#hint
+{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+#word_selection
+{
+    display: none;
+    margin: 0 0 20px 0;
+}
+
+#selected_word
+{
+    display: inline-block;
+    height: 18px;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 0 10px 0 0;
+    background: #fff;
+    border-radius: 6px;
+}
+
+#popup_layout
+{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#popup
+{
+    background: #f5f5f5;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    border-radius: 14px;
+}
+
+#popup_content
+{
+    padding: 0 10px;
+}
+
+#popup_buttons
+{
+    padding: 20px;
+}
+
+#popup_buttons button:not(:first-child)
+{
+    margin: 0 0 0 8px;
+}
+
+#popup_title
+{
+    padding: 10px 0;
+    background: #ddd;
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    border-radius: 14px 14px 0 0;
+
+}
+
+#new_game
+{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.added_word
+{
+    display: inline;
+    font-size: 13px;
+}
