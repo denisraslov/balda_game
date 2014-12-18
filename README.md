@@ -1,4 +1,4 @@
-balda_game
+The Balda Game
 ==========
 
 The implementation of russian logic game with words "Balda"
